@@ -9,6 +9,9 @@
 const { slugify } = require("./src/util/utilityFunction")
 const path = require("path")
 
+// 각 스키마의 모든 노드가 생길때마다 실행된다.
+// 포스트를 만들때마다 title로 slug(path)를 자동적으로 만들어줌
+// 매번 slug(path)를 만들어 줄 필요 없다.
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === "MarkdownRemark") {

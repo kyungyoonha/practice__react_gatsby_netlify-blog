@@ -4,9 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const TagsPage = () => (
-  <Layout>
+  <Layout pageTitle="All topics">
     <SEO title="Tags" />
-    <h1>Tags page...</h1>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque
+    ipsa vero quaerat libero porro obcaecati sint laboriosam ex suscipit, harum
+    hic, corporis dolores distinctio minima pariatur quod aperiam eius
+    repellendus est vitae voluptas itaque consectetur. Dolorem aspernatur
+    deserunt ullam!
   </Layout>
 )
 
