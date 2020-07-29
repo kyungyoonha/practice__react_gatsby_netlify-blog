@@ -27,9 +27,9 @@ const Post = ({ title, author, path, date, body, fluid, tags }) => {
         </CardSubtitle>
         <CardText>{body}</CardText>
 
-        <ul class="post-tags">
+        <ul className="post-tags">
           {tags.map(tag => (
-            <li>
+            <li key={tag}>
               <Link to={`/tag/${slugify(tag)}`}>
                 <Badge color="primary">{tag}</Badge>
               </Link>
