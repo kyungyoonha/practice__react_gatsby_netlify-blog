@@ -1,7 +1,7 @@
 ---
 title: "Second Post - HTML"
 date: "2020-07-30 11:46:00"
-author: "Jack"
+author: "Jane"
 image: ../../images/image2.png
 tags:
   - code
