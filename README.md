@@ -7,8 +7,11 @@ https://laughing-allen-f2ace5.netlify.app/tag/web-design
 - 002-second-post.md
 - 003-third-post.md
 
-gatsby-cofing 추가
+graphql
+- 데이터 조회는 graphql로 원하는 형태로 가지고올 수 있다.
+- 쿼리문 하나로 손쉽게 데이터 접근 가능
 
+gatsby-cofing 추가
 1. gatsby-plugin-sass => Scss 적용   
 2. gatsby-plugin-catch-links => 링크 이동시 리로딩이 아니라 싱글페이지로 작동   
 3. gatsby-transformer-remark 추가   
