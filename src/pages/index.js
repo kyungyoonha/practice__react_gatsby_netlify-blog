@@ -76,3 +76,5 @@ export default IndexPage
 // createPages()로 만들어주고 맨 마지막에 context로 넘기는 변수(slug)는
 // 각 페이지에서 query를 조회할때 $slug 형태로 받아 올 수 있다.
 // 받아온 변수를 이용하여 각 페이지에 해당하는 데이터만 조회하여 뿌려준다.
+
+// npm install disqus-react
