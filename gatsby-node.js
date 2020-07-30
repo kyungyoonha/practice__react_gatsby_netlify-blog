@@ -3,6 +3,7 @@ const path = require("path")
 const authors = require("./src/util/authors")
 const _ = require("lodash")
 const { templateSettings } = require("lodash")
+const { template } = require("lodash")
 
 // 각 스키마의 모든 노드가 생길때마다 실행된다.
 // 포스트를 만들때마다 title로 slug(path)를 자동적으로 만들어줌
@@ -26,6 +27,7 @@ exports.createPages = ({ actions, graphql }) => {
         singlePost: path.resolve("src/templates/single-post.js"),
         tagsPage: path.resolve("src/templates/tags-page.js"),
         tagPosts: path.resolve("src/templates/tag-posts.js"),
+        postList: path.resolve("src/templates/post-list.js"),
     }
 
     return graphql(`
@@ -101,6 +103,26 @@ exports.createPages = ({ actions, graphql }) => {
                 component: templates.tagPosts,
                 context: {
                     tag,
+                },
+            })
+        })
+
+        const postsPerPage = 2
+        const numberOfPages = Math.ceil(posts.length / postsPerPage)
+
+        Array.from({ length: numberOfPages }).forEach((_, index) => {
+            const isFirstPage = index === 0
+            const currentPage = index + 1
+
+            if (isFirstPage) return
+
+            createPage({
+                path: `/page/${currentPage}`,
+                component: templates.postList,
+                context: {
+                    limit: postsPerPage,
+                    skip: index * postsPerPage,
+                    currentPage,
                 },
             })
         })
