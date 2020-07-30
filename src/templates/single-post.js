@@ -54,8 +54,8 @@ const singlePost = ({ data, pageContext }) => {
                     </ul>
                 </CardBody>
             </Card>
-            <h3 class="text-center">Share this post</h3>
-            <div class="text-center social-share-links">
+            <h3 className="text-center">Share this post</h3>
+            <div className="text-center social-share-links">
                 <ul>
                     <li>
                         <a
@@ -68,7 +68,7 @@ const singlePost = ({ data, pageContext }) => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i class="fab fa-facebook-f fa-2x"></i>
+                            <i className="fab fa-facebook-f fa-2x"></i>
                         </a>
                     </li>
                     <li>
@@ -86,7 +86,7 @@ const singlePost = ({ data, pageContext }) => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i class="fab fa-twitter fa-2x"></i>
+                            <i className="fab fa-twitter fa-2x"></i>
                         </a>
                     </li>
                     <li>
@@ -100,7 +100,7 @@ const singlePost = ({ data, pageContext }) => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i class="fab fa-google fa-2x"></i>
+                            <i className="fab fa-google fa-2x"></i>
                         </a>
                     </li>
                     <li>
@@ -114,7 +114,7 @@ const singlePost = ({ data, pageContext }) => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i class="fab fa-linkedin fa-2x"></i>
+                            <i className="fab fa-linkedin fa-2x"></i>
                         </a>
                     </li>
                 </ul>
